@@ -1,0 +1,44 @@
+/* Container styling for the book list */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Individual book item styling */
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease;
+}
+
+.book-item:hover {
+  transform: scale(1.05);
+}
+
+/* Book image styling */
+.book-image {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Book title styling */
+.book-title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Book author styling */
+.book-author {
+  font-size: 0.9rem;
+  color: #666;
+}
