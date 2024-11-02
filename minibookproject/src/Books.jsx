@@ -1,8 +1,7 @@
 import BookList from './BookList'
-import { useState } from 'react'
 
 function Books() {
-  const [books,setBooks] = useState([{
+  const books = [{
     title :'Maniac Magee',
     image: 'https://m.media-amazon.com/images/I/71XfF+H3V7L._AC_UY327_FMwebp_QL65_.jpg',
     author: 'Jerry Spinelli '
@@ -70,7 +69,7 @@ function Books() {
     image: 'https://placehold.co/200',
     author: 'Placeholder'
   }
-])
+]
 
 
   return (
