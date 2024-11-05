@@ -4,9 +4,9 @@ import People from "./People"
 function App() {
 
   return (
-    <>
-      <People />
-    </>
+    <div className='container'>
+    <People />
+  </div>
   )
 }
 

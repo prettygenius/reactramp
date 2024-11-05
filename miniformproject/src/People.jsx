@@ -21,8 +21,8 @@ import data  from './data/data'
       <button onClick={()=> removeItem(id)}>remove</button>
     </div>
     )
-    
   })}
+   <button className='btn'>Clear</button>
   </>
   )
 };
