@@ -1,11 +1,12 @@
-import Fetchusers from "./fetchusersproject/Fetchusers"
+import Fetchdata from "./fetchswapiproject/Fetchdata"
+
 
 
 function App() {
   
   return (
     <main className="container">
-    <Fetchusers />
+    <Fetchdata />
     </main>
   )
 }
