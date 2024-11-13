@@ -1,4 +1,4 @@
-import Fetchdata from "./fetchswapiproject/Fetchdata"
+import ToggleWindow from "./togglewindowproject/ToggleWindow"
 
 
 
@@ -6,7 +6,7 @@ function App() {
   
   return (
     <main className="container">
-    <Fetchdata />
+    <ToggleWindow />
     </main>
   )
 }
