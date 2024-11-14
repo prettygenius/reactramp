@@ -1,4 +1,4 @@
-import ToggleWindow from "./togglewindowproject/ToggleWindow"
+import Loadcontent from "./conditionsproject/Loadcontent"
 
 
 
@@ -6,7 +6,7 @@ function App() {
   
   return (
     <main className="container">
-    <ToggleWindow />
+    <Loadcontent />
     </main>
   )
 }
