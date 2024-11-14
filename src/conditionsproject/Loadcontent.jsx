@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-const url = 'https://api.github.com/users/prettygeniuss'
+const url = 'https://api.github.com/users/prettygenius'
 
 function Loadcontent() {
 
