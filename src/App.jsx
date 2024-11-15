@@ -1,4 +1,4 @@
-import Loadcontent from "./conditionsproject/Loadcontent"
+import Inputform from "./formproject/Inputform"
 
 
 
@@ -6,7 +6,7 @@ function App() {
   
   return (
     <main className="container">
-    <Loadcontent />
+    <Inputform />
     </main>
   )
 }
