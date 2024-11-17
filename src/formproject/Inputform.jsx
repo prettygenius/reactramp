@@ -4,11 +4,25 @@ function Inputform() {
 
   const [firstName, setfirstName] = useState('')
   const [email, setEmail] = useState('')
+  const [person, setPerson] = useState([])
+ 
+  function handleSubmit(e) {
+    e.preventDefault() 
+    if(firstName && email) {
+      const people = {
+        firstName: firstName, 
+        email: email
+      }
+        console.log(people)
+    } else(
+      console.log('error empty value')
+    )
+  }
   
   return (
     <article>
-    <form className="form" onSubmit={(e) => e.preventDefault()}>
-    <div className="form-control">
+    <form className="form" onSubmit={handleSubmit}>
+    <div className="form-control"> 
     <label htmlFor="firstName">Name: </label>
     <input type="text" id="firstName" name="firstName" value={firstName}
     onChange={(e) => setfirstName(e.target.value)}/>
