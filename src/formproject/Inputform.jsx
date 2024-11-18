@@ -10,10 +10,10 @@ function Inputform() {
     e.preventDefault() 
     if(firstName && email) {
       const people = {
-        firstName: firstName, 
-        email: email
-      }
-        console.log(people)
+        firstName,email}
+        setPerson((prevPerson) => [...prevPerson,people])
+        setfirstName(""); // Clear input fields
+        setEmail("");
     } else(
       console.log('error empty value')
     )
@@ -34,6 +34,13 @@ function Inputform() {
     </div>
     <button type="submit">Add User</button>
     </form>
+    <ul>
+      {person.map((people) => {
+        return(
+        <li key={people}>{`${people.firstName} - ${people.email}`}</li>
+      )
+      })}
+    </ul>
     </article>
   )
 }
