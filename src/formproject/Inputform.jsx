@@ -88,7 +88,7 @@ function Inputform() {
   function handleSubmit(event) {
     event.preventDefault();
     if (formData.firstName && formData.email) {
-      // Add the current form data to the array
+      // Add(combine) the current form data to the new array
       setSubmittedData((prevData) => [...prevData, formData]);
       // Clear the input fields
       setFormData({ firstName: "", email: "" });
