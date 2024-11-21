@@ -50,7 +50,7 @@
 
 //Refactor
 
-import { useState } from "react"
+import { useState, useId } from "react"
 
 function Inputform() {
 
@@ -72,6 +72,8 @@ function Inputform() {
   // }
 
   const [submittedData, setSubmittedData] = useState([]);
+
+  const id = useId()
 
   function handleChange(e) {
     setFormData(prevData => {
@@ -97,19 +99,19 @@ function Inputform() {
     }
   }
   
-
+ 
   
   return (
     <article>
     <form className="form" onSubmit={handleSubmit}>
     <div className="form-control"> 
-    <label htmlFor="firstName">Name: </label>
-    <input type="text" id="firstName" name="firstName" value={formData.firstName}
+    <label htmlFor={`${id}-firstName`}>Name: </label>
+    <input type="text" id={`${id}-firstName`} name="firstName" value={formData.firstName}
     onChange={handleChange}/>
     </div>
     <div className="form-control">
-    <label htmlFor="email">Email: </label>
-    <input type="text" id="email" name="email" value={formData.email} 
+    <label htmlFor={`${id}-email` }>Email: </label>
+    <input type="text" id={`${id}-email` } name="email" value={formData.email} 
     onChange={handleChange} />
     </div>
     <button type="submit">Add User</button>
