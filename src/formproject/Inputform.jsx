@@ -117,9 +117,9 @@ function Inputform() {
     <button type="submit">Add User</button>
     </form>
     <ul>
-     {submittedData.map((person) => {
+     {submittedData.map((person,index) => {
        return(
-         <li key={person}>{`${person.firstName} - ${person.email}`}</li>
+         <li key={index} className="item">{`${person.firstName} - ${person.email}`}</li>
       )
       })}
    </ul>
