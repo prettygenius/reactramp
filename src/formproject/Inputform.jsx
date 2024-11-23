@@ -72,6 +72,7 @@ function Inputform() {
   // }
 
   const [submittedData, setSubmittedData] = useState([]);
+  const [errorMessage, setErrorMessage] = useState('')
 
   const id = useId()
 
@@ -94,7 +95,9 @@ function Inputform() {
       setSubmittedData((prevData) => [...prevData, formData]);
       // Clear the input fields
       setFormData({ firstName: "", email: "" });
+      setErrorMessage('')
     } else {
+      setErrorMessage('Please fill out all fields')
       console.log("Please fill out all fields");
     }
   }
@@ -116,6 +119,7 @@ function Inputform() {
     </div>
     <button type="submit">Add User</button>
     </form>
+    {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
     <ul>
      {submittedData.map((person,index) => {
        return(
