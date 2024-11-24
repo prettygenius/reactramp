@@ -1,4 +1,4 @@
-import Inputform from "./formproject/Inputform"
+import Reference from "./useref/Reference"
 
 
 
@@ -6,7 +6,7 @@ function App() {
   
   return (
     <main className="container">
-    <Inputform />
+    <Reference />
     </main>
   )
 }
