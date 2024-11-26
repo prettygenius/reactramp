@@ -1,13 +1,12 @@
-import Reference from "./useref/Reference"
+import Navbar from './useref/Navbar'
 
 
 
 function App() {
   
   return (
-    <main className="container">
-    <Reference />
-    </main>
+    <Navbar />
+  
   )
 }
 
